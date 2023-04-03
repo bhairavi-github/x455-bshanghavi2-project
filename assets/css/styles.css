@@ -74,6 +74,20 @@ File Description: Main CSS file of Purr & Wag Pet Photography Website
   --bs-btn-disabled-border-color: #B6D0B9;
 }
 
+/*Change Bootstrap 5's default Table-Color */
+.table-success {
+  --bs-table-color: #000;
+  --bs-table-bg: #b6d0b9;
+  --bs-table-border-color: #bcd0c7;
+  --bs-table-striped-bg: #79857A;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #bcd0c7;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg:#818782;
+  --bs-table-hover-color: #000;
+  color: var(--bs-table-color);
+  border-color: var(--bs-table-border-color);
+}
 
 /*Import Cormorant Garmond Light 300 Regular & Italic, Lato 400 Regular & Italic, Lato 700 Bold & Italic Google Fonts
 CDN links are in HTML files
@@ -82,9 +96,31 @@ font-family: 'Lato', sans-serif;
 */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/*Change Bootstrap 5's default body font family and font-size*/
 :root {
   --bs-font-sans-serif: 'Lato', sans-serif !important;
+  --bs-body-font-size: 1rem !important;
 }
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
 
 /*Font Stylings*/
 .title-text {
@@ -126,26 +162,19 @@ font-family: 'Lato', sans-serif;
 }
 
 
-/*Change Bootstrap 5's default body font family and font-size*/
-:root {
-  --bs-body-font-family: 'Lato', sans-serif !important;
-  --bs-body-font-size: 1rem !important;
-}
-
-
 /*Carousel Image Holder Size*/
 .c-item {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 100vh;
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*Carousel Image Size*/
 .c-image {
-    height: 100%;
-    object-fit: cover; 
-    filter: brightness (0.9);
+  height: 100%;
+  object-fit: cover; 
+  filter: brightness (0.9);
 }
 
 /*Header Item Holder Size*/
@@ -163,6 +192,7 @@ font-family: 'Lato', sans-serif;
   background-size:cover;
   background-position: center;
 }
+
 
 /*Provide Extra Space between sections - just a filler*/
 .spacer-item {
