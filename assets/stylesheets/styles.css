@@ -1,0 +1,209 @@
+/*
+Author: Bhairavi
+Created: April 2023
+File Description: Main CSS file of Purr & Wag Pet Photography Website
+*/
+
+/*Change Bootstrap 5's Colors*/
+:root { 
+  --bs-bg-opacity: 1 !important;
+  --bs-primary-rgb:206, 180, 193 !important;         /* #ceb4c1 */
+  --bs-success-rgb: 121, 133, 122 !important;       /* #79857A */
+  --bs-info-rgb: 182, 208, 185 !important;           /* B6D0B9 */
+  --bs-warning-rgb: 238, 238, 238 !important;       /* #EEEEEE */
+  --bs-body-bg-rgb: 238, 238, 238 !important;       /* #EEEEEE */
+   
+
+  --bs-bg-primary: #ceb4c1 !important;
+  --bs-bg-success:  #79857A !important;
+  --bs-bg-info: #B6D0B9 !important;
+  --bs-bg-warning: #EEEEEE !important;
+  --bs-body-bg: #EEEEEE !important;
+}
+
+
+.bg-primary {
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-success {
+  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-info {
+  background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-warning {
+  background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important;
+}
+
+/* Change Bootstrap's Button Color for bg-success */
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #79857A;
+  --bs-btn-border-color: #79857A;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #879688;
+  --bs-btn-hover-border-color: #6d7a6e;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #6d7a6e;
+  --bs-btn-active-border-color: #7f8d81;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #79857A;
+  --bs-btn-disabled-border-color: #79857A;
+}
+
+
+.btn-info {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #B6D0B9;
+  --bs-btn-border-color: #B6D0B9;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #cbe9d5;
+  --bs-btn-hover-border-color: #bedbb9;
+  --bs-btn-focus-shadow-rgb: 11, 172, 204;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #d5eddd;
+  --bs-btn-active-border-color: #bedbb91;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #B6D0B9;
+  --bs-btn-disabled-border-color: #B6D0B9;
+}
+
+
+/*Import Cormorant Garmond Light 300 Regular & Italic, Lato 400 Regular & Italic, Lato 700 Bold & Italic Google Fonts
+CDN links are in HTML files
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Lato', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --bs-font-sans-serif: 'Lato', sans-serif !important;
+}
+
+/*Font Stylings*/
+.title-text {
+  font-family: 'Cormorant Garamond', serif !important;
+  text-transform: uppercase !important;
+}
+
+.subtitle-text {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-style: italic !important;
+}
+
+.nav-text {
+  font-family: 'lato', sans-serif !important;
+  text-transform: uppercase !important;
+}
+
+.header-image-title {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-weight: bolder !important;
+  text-transform: uppercase !important;
+}
+
+.header-image-subtitle {
+  font-family: 'lato', sans-serif !important;
+}
+
+.footer-title-text {
+  font-family: 'Cormorant Garamond', serif !important;
+}
+
+.carousel-image-title {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-weight: bolder;
+}
+
+.carousel-image-subtitle {
+  font-family: 'lato', sans-serif !important;
+}
+
+
+/*Change Bootstrap 5's default body font family and font-size*/
+:root {
+  --bs-body-font-family: 'Lato', sans-serif !important;
+  --bs-body-font-size: 1rem !important;
+}
+
+
+/*Carousel Image Holder Size*/
+.c-item {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Carousel Image Size*/
+.c-image {
+    height: 100%;
+    object-fit: cover; 
+    filter: brightness (0.9);
+}
+
+/*Header Item Holder Size*/
+.h-item {
+  height: 75vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.h-image {
+  position:relative;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+
+/*Provide Extra Space between sections - just a filler*/
+.spacer-item {
+  height: 400px;
+}
+
+
+/* Provide min. height for the section blurbs container */
+.intro-item {
+  min-height: 20vh;
+}
+
+
+/* Style image thumbnails in sortable table */
+.img-thumbnail {
+  padding: 0;
+  border: 0;
+  width: 125px;
+  height: auto; 
+}
+
+/* Table Sort Arrows - CSS and JS code from https://codepen.io/jtrumbull/pen/yNwMQr*/
+th.sortable {
+  position: relative;
+  cursor: pointer;
+}
+
+th.sortable::after {
+  font-family: FontAwesome;
+  content: "\f0dc";
+  color: #999;
+}
+
+th.sortable.asc::after {
+  content: "\f0d8";
+}
+
+th.sortable.desc::after {
+  content: "\f0d7";
+}
+
+th.sortable:hover::after {
+  color: #333;
+}

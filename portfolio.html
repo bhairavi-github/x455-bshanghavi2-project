@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+	<!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+	
+	<!--Bhairavi's CSS-->
+	<link rel="stylesheet" href="./assets/css/styles.css">
+
+	<!--Link to Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+	<!--Bootstrap Script-->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+	
+	<!--Navigation Bar - jQuery CDN link-->
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/can.js/6.6.3/core.min.js" 
+	integrity="sha512-SS+LZeW7rI+McgreyW2Y/ShpWxvr92PO989kh9z5a3g5NiG95J+OrIJ8CiAkWMXtmFKfg2YnTEdm0Ufz+Xqjvg==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+   
+<!--Navigation Bar-->
+<header>
+	<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+	  <div class="container px-4 justify-content-between">
+		<a class="navbar-brand" href="index.html"><img src="./assets/images/logo-icon-name-light.png" alt="" height="50"/></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+			<li class="nav-item">
+			  <a href="index.html" i class="bi-house-fill p-4" role="button" style="font-size: 1.5rem; color:whitesmoke;"></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="about.html" style="text-transform: uppercase;">About</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="photosessions.html" style="text-transform: uppercase;">Photosessions</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="portfolio.html" style="text-transform: uppercase;">Portfolio</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="rescues.html" style="text-transform: uppercase;">Rescues</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="blog.html" style="text-transform: uppercase;">Blog</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="contact.html" style="text-transform: uppercase;">Contact</a>
+			</li>
+		  </ul>
+		<div>
+		  <ul class="navbar-nav">
+			<li class="nav-item">
+			  <a href="#" i class="bi-cart-fill p-4" role="button" style="font-size: 1.5rem; color:whitesmoke;"></a>
+			</li>
+			<li class="nav-item">
+			  <a class="btn btn-success" href="contact.html" role="button" alt="" style="text-transform: uppercase;">Book Now</a>
+			</li>
+		  </ul>
+		</div>
+		</div>
+		</div>
+	</nav> 
+</header>
+
+<!--Header Image-->
+<header class="container-fluid text-center h-item" 
+style="background-image: url('./assets/images/AdobeStock_123138990.jpg');">
+  <div class="d-flex justify-content-center align-items-end py-5 h-100">
+	<div class="text-white">
+	  <h1 class="header-image-title mb-3">Portfolio</h1>
+	  <h5 class="header-image-subtitle mb-3">Let me take you on a journey...</h5>
+	  <a class="btn btn-outline-light mb-5 " href="contact.html" role="button">Book A Free Consultation</a>
+	</div>
+  </div>
+</header> 
+
+<!--Portfolio Blurb-->
+<div class="container-fluid bg-info p-5">
+	<article class="container text-center intro-item">
+		<img src="./assets/images/Wildflower.png" alt="Flower Image" style="height:75px; margin:10px">
+		<p class="pb-2"> At Purr &amp; Paw Pet Photography, we know that every pet is unique. <br>
+			That’s why we specialize in taking creative pet portraits that capture the true spirit of your furry friend. <br>
+			Whether they’re shy, silly, lively, playful or affectionate, our sessions are designed to bring out your pet’s personality.</p>
+		<h2 class="footer-title-text">After all, pets can’t take selfies!</h2>
+		<br>
+	</article> 
+</div>
+
+<!--Portfolio Lighbox-->
+<section>
+	<div class="container p-5">
+	<div class="row pb-4">
+		<a href="./assets/images/AdobeStock_377931750_1600x1200.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="Two Dogs Cuddled On a Blanket" class="col-sm-4">
+			<img src="./assets/images/AdobeStock_377931750_1600x1200.jpg" class="img-fluid">
+		</a>
+		<a href="./assets/images/AdobeStock_108251141_1600x1200.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="Baby Playing With Dog" class="col-sm-4">
+			<img src="./assets/images/AdobeStock_108251141_1600x1200.jpg" class="img-fluid">
+		</a>
+		<a href="./assets/images/AdobeStock_317186863_1600x1200.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="White & Black Cat with Golden Eyes Behind A Vine" class="col-sm-4">
+			<img src="./assets/images/AdobeStock_317186863_1600x1200.jpg" class="img-fluid">
+		</a>
+	</div>
+
+	<div class="row pb-4">
+		<a href="./assets/images/AdobeStock_175310658_1600x1200.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="Black Cat with Golden Eyes Walking on a Fallen Branch" class="col-sm-4">
+			<img src="./assets/images/AdobeStock_175310658_1600x1200.jpg" class="img-fluid">
+		</a>
+		<a href="./assets/images/AdobeStock_171454955_1600x1200.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="White Dog in a Field of Purple Lilacs" class="col-sm-4">
+			<img src="./assets/images/AdobeStock_171454955_1600x1200.jpg" class="img-fluid">
+		</a>
+		<a href="./assets/images/AdobeStock_271243600_1600x1200.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="Girl with Striking Eyes Cuddled with a Cat Striking Eyes" class="col-sm-4">
+			<img src="./assets/images/AdobeStock_271243600_1600x1200.jpg" class="img-fluid">
+		</a>
+	</div>
+
+	<div class="row pb-1">
+		<a href="./assets/images/AdobeStock_474472819_1600x1200.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="Girl Stroking Chin of a Wolf Dog in a Wintery Landscape" class="col-sm-4">
+			<img src="./assets/images/AdobeStock_474472819_1600x1200.jpg" class="img-fluid">
+		</a>
+		<a href="./assets/images/AdobeStock_322277556_1600x1200.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="Headshot of a Snowy White Cat" class="col-sm-4">
+			<img src="./assets/images/AdobeStock_322277556_1600x1200.jpg" class="img-fluid">
+		</a>
+		<a href="./assets/images/AdobeStock_391037378_1600x1200.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-caption="Black & White Dog Sulking under a Bright Yellow Blanket" class="col-sm-4">
+			<img src="./assets/images/AdobeStock_391037378_1600x1200.jpg" class="img-fluid">
+		</a>
+	</div>
+</div>
+</section>
+
+<!--Footer-->
+<footer>
+	<div class="container-fluid bg-primary">
+		  <div class="row justify-content-center">
+			  <div class="mt-4 text-center">
+					<h2 class="footer-title-text">Subscribe, and get the latest Newsletter</h2>
+					<p>Stay up to date with the latest news on workshops, photo shoots, and offers.</p>
+					<a class="btn btn-success" href="#" role="button" alt="" height="50">Subscribe</a>
+			  </div>
+		  </div>
+			  <div class="row justify-content-center">
+				<div class="col-lg-12 text-center">
+				  <div class="p-4">
+					<!-- Facebook -->
+					<a href="https://www.facebook.com/" target="_blank"
+					  i class="bi-facebook" style="font-size: 2rem; color:currentColor;"></a>
+					<!--Instagram-->
+					<a href="https://www.instagram.com/" target="_blank"
+					  i class="bi-instagram" style="font-size: 2rem; color:currentColor;"></a>
+					<!-- Twitter -->
+					<a href="https://twitter.com/" target="_blank"
+					i class="bi-twitter" style="font-size: 2rem; color:currentColor;"></a>
+					<!-- Linkedin -->
+					<a href="https://www.linkedin.com/" target="_blank"
+					  i class="bi-linkedin" style="font-size: 2rem; color:currentColor;"></a>
+					<!-- GitHub -->
+					<a href="https://www.github.com/" target="_blank" 
+					i class="bi-github" style="font-size: 2rem; color:currentColor;"></a>
+					<a href="#" target="_blank" 
+                i class="bi-search" style="font-size: 2rem; color:currentColor;"></a>
+				  </div> 
+				</div>
+			  </div>
+			  <hr class="my-2">
+			  <div class="row">
+				  <div class="col-lg-12 text-center">
+					<a class="btn" href="index.html" role="button"><img src="./assets/images/logo-dark.png" alt="" height="50" /></a>
+					<p>2023 © Purr &amp; Paw Photography. Design by Bhairavi</p>
+				  </div>
+			  </div>
+		  </div>
+</footer>
+
+
+<!--Script to make navbar visible if scrolling on home page; Need the jQuery CDN link in the <head> to make the script work-->
+<script type="module">
+	  var nav =document.querySelector('nav');
+	  window.addEventListener ('scroll',function(){
+		if (window.pageYOffset >100)
+		{nav.classList.add ('bg-primary', 'shadow');}
+		else
+		{nav.classList.remove('bg-primary');}
+		})
+</script>
+
+<!--bs5-lightbox Script-->
+<script type="module">
+	import * as Lightbox from 'https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js';
+	
+	const options = {
+	keyboard: true,
+	size: 'fullscreen'
+	};
+
+	document.querySelectorAll('.my-lightbox-toggle').forEach((el) => el.addEventListener('click', (e) => {
+	  e.preventDefault();
+	  const lightbox = new Lightbox(el);
+	  lightbox.show();
+	}));
+</script>
+
+
+</body>
+</html>

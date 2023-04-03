@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    
+	<!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+	
+	<!--Bhairavi's CSS-->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+	
+	<!--Link to Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!--Bootstrap Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+	<!--Navigation Bar - jQuery CDN link-->
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/can.js/6.6.3/core.min.js" 
+	integrity="sha512-SS+LZeW7rI+McgreyW2Y/ShpWxvr92PO989kh9z5a3g5NiG95J+OrIJ8CiAkWMXtmFKfg2YnTEdm0Ufz+Xqjvg==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+
+<!--Navigation Bar-->
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container px-4 justify-content-between">
+      <a class="navbar-brand" href="index.html"><img src="./assets/images/logo-icon-name-light.png" alt="" height="50"/></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="index.html" i class="bi-house-fill p-4" role="button" style="font-size: 1.5rem; color:whitesmoke;"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="text-transform: uppercase;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="photosessions.html" style="text-transform: uppercase;">Photosessions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html" style="text-transform: uppercase;">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rescues.html" style="text-transform: uppercase;">Rescues</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="blog.html" style="text-transform: uppercase;">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="text-transform: uppercase;">Contact</a>
+          </li>
+        </ul>
+      <div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" i class="bi-cart-fill p-4" role="button" style="font-size: 1.5rem; color:whitesmoke;"></a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success" href="contact.html" role="button" alt="" style="text-transform: uppercase;" >Book Now</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+      </div>
+  </nav> 
+</header>
+
+<!--Header Image-->
+<header class="container-fluid text-center h-item" 
+	style="background-image: url('./assets/images/AdobeStock_322409862.jpg');">
+      <div class="d-flex justify-content-center align-items-end py-5 h-100">
+        <div class="text-white">
+          <h1 class="header-image-title mb-3">Blog &amp; FAQs</h1>
+          <h5 class="header-image-subtitle mb-3">We’ve got answers for all your questions.  Even ones you didn't know you had...</h5>
+          <a class="btn btn-outline-light mb-5" href="contact.html" role="button">Book A Free Consultation</a>
+        </div>
+      </div>
+</header> 
+
+<!-- Blog Blurb -->
+<div class="container-fluid bg-info p-5">
+  <article class="container text-center intro-item">
+    <img src="./assets/images/Wildflower.png" alt="Flower Image" style="height:75px; margin:10px">
+    <p>Pets beloved members of our families. We, at Purr &amp; Wag believe they deserve to be celebrated and remembered through stunning photographs. <br><br>
+      Through our blog, we hope to inspire and educate fellow pet owners and photography enthusiasts, sharing our passion for capturing the magic of pets in photographs. So whether you're looking for inspiration for your next pet portrait session or simply want to learn more about the art of pet photography, we invite you to join us on this exciting journey.</p>
+    <h2 class="footer-title-text pb-2"> Join us on a journey to capture the personality of our furry campanions. </h2>
+    <br>
+  </article> 
+</div>
+
+<!--Blog & FAQ-->
+<section class="container p-5">
+	<div class="row g-5">
+    <!--Column Under Which the two columns for blog will nest-->
+			<div class="col-lg-7">
+      <!--Row #1 of the Blog Section-->
+				<div class="row g-3 pb-5">
+					<!--Row #1 Column #1 Blog-->
+					<div class="col-lg-6">
+            <figure class="figure ratio ratio-16x9">
+                <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/NjaN_7tnRKU" allowfullscreen></iframe>
+            </figure>
+            <figcaption class="fig-caption pb-1">Ultimate Guide to Shelter Pet Photography</figcaption>
+            <p class="fst-italic"> February 12, 2023</p>
+				  </div>
+					
+					<!--Row #1 Column #2 Blog-->
+					<div class="col-lg-6">
+              <figure class="figure ratio ratio-16x9">
+                  <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/YIygMEKuN_w" allowfullscreen></iframe> 
+            </figure>
+            <figcaption class="fig-caption pb-1">Importance of Shelter Pet Photography</figcaption>
+            <p class="fst-italic"> February 01, 2023</p>
+				</div>	
+			</div> <!--End Row #1 of the Blog Section-->
+
+      <!--Row #2 of the Blog Section-->
+				<div class="row g-3">
+					<!--Row #2 Column #1 Blog-->
+					<div class="col-lg-6">
+            <figure class="figure ratio ratio-16x9" style="object-fit:cover;">
+                <img src="./assets/images/AdobeStock_172768824_1600x1200.jpg" class="figure-img rounded" alt="">
+          </figure>
+          <figcaption class="fig-caption pb-1">Ten Things to Look for in a Pet Photographer</figcaption>
+          <p class="fst-italic">January 21, 2023</p>
+				  </div>
+					
+					<!--Row #2 Column #2 Blog-->
+					<div class="col-lg-6">
+              <figure class="figure ratio ratio-16x9">
+                  <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/Cg3q0O1hqFo" allowfullscreen></iframe>
+            </figure>
+            <figcaption class="fig-caption pb-1">Beginner's Guide to Pet Photography</figcaption>
+            <p class="fst-italic"> December 31, 2022</p>
+
+				</div>	
+			</div> <!--End Row #2 of the Blog Section-->
+    </div> <!-- End of Col-lg-9-->
+
+		
+      <!--Column #3 Accordion for FAQs-->
+			<div class="col-lg-5 bg-info p-4">
+				<!--FAQ Title-->
+				<div class="ms-3 mb-3 text-center">
+					<h3 class="title-text"> Frequently Asked Questions</h3>
+				</div>
+  
+				<div class="accordion" id="accordionPanelsStayOpenExample">
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+						<button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+						  What animals do you photograph?
+						</button>
+					  </h2>
+					  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+						<div class="accordion-body">
+						  At Purr &amp; Wag photography, we focus mostly on dogs and cats. If a family has multiple animals, we do make exceptions and photography other family pets alongside the primary cat/ dog client.
+						</div>
+					  </div>
+					</div>
+
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+						<button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+						  In what cities are you available for photoshoots?
+						</button>
+					  </h2>
+					  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+						<div class="accordion-body">
+						  I mainly carry out photoshoot in the San Francisco Bay area.I have a backyard pet studio in Belmont, CA. I usually limit my commute time to 1 h each way and charge an additional $75/h fee for the commute.
+						</div>
+					  </div>
+					</div>
+
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+						<button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            What should I wear for the photoshoot?
+						</button>
+					  </h2>
+					  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+						<div class="accordion-body">
+						  When choosing an outfit for a pet photography photoshoot, it's important to keep a few things in mind:<br><br>
+              Comfort: Wear something Comfortable.<br><br>
+              Color: Choose colors that will complement your pet's coat. Solid colors, pastels, and earth tones tend to work well.<br><br>
+              Texture: Avoid anything too shiny or sparkly. Instead, choose fabrics with a matte finish.<br><br>
+              Practicality: Make sure your outfit is practical and allows for movement.<br><br>
+						</div>
+					  </div>
+					</div>
+
+          <div class="accordion-item">
+					  <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+						<button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+            Should I bring treats for my pets?
+						</button>
+					  </h2>
+					  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+						<div class="accordion-body">
+						  Yes, you should definitely consider bringing some treats to your pet photoshoot. Treats can be a great way to keep your pet focused, engaged, and well-behaved during the shoot. They can also help to reinforce good behavior and reward your pet for a job well done.<br><br>
+              When choosing treats, try to select ones that are small, easy to handle, and won't make a mess. Avoid treats that are too crumbly or sticky, as they can create distractions or leave residue on your pet's fur.<br><br>
+              You may also want to consider bringing a favorite toy or object that your pet loves. This can help to keep them engaged and provide some fun, interactive moments during the shoot.
+						</div>
+					  </div>
+					</div>
+
+          <div class="accordion-item">
+					  <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+						<button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+              What if it rains on the day of the photoshoot?
+						</button>
+					  </h2>
+					  <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+						<div class="accordion-body">
+						  If it rains on the day of your pet photoshoot, you will need to decide whether to reschedule the shoot or continue with it despite the weather. Here are a few things to consider:<br><br>
+              Safety: If the rain is heavy or accompanied by thunderstorms, it may not be safe to proceed with the photoshoot.<br><br>
+              Location: If your photoshoot is outdoors, rain may not be ideal for the kind of photos you have in mind. <br><br>
+              Look and feel: Consider whether rain fits the look and feel you want for your photos. Some people love the dramatic, moody effect that rain can add to photos, while others prefer bright and sunny conditions. <br><br>
+              Your pet's comfort: Rain can be uncomfortable for some pets, so make sure your furry friend is warm, dry, and comfortable throughout the shoot. Bring a towel, a dry blanket, or a raincoat to keep your pet dry and cozy during breaks.<br><br>
+              Ultimately, the decision to reschedule or continue with the shoot is up to you. If you decide to proceed with the shoot, be sure to communicate with your photographer ahead of time to discuss any adjustments that may be necessary due to the weather.<br><br>
+						</div>
+					  </div>
+					</div>
+				</div>
+    </div>
+		</div>	<!--Row #1 of Blog/Accordion Section-->
+</section>
+
+<!--Footer-->
+<footer>
+  <div class="container-fluid bg-primary">
+        <div class="row justify-content-center">
+            <div class="mt-4 text-center">
+                  <h2 class="footer-title-text">Subscribe, and get the latest Newsletter</h2>
+                  <p>Stay up to date with the latest news on workshops, photo shoots, and offers.</p>
+                  <a class="btn btn-success" href="#" role="button" alt="" height="50">Subscribe</a>
+            </div>
+        </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-12 text-center">
+                <div class="p-4">
+                  <!-- Facebook -->
+                  <a href="https://www.facebook.com/" target="_blank"
+                    i class="bi-facebook" style="font-size: 2rem; color:currentColor;"></a>
+                  <!--Instagram-->
+                  <a href="https://www.instagram.com/" target="_blank"
+                    i class="bi-instagram" style="font-size: 2rem; color:currentColor;"></a>
+                  <!-- Twitter -->
+                  <a href="https://twitter.com/" target="_blank"
+                  i class="bi-twitter" style="font-size: 2rem; color:currentColor;"></a>
+                  <!-- Linkedin -->
+                  <a href="https://www.linkedin.com/" target="_blank"
+                    i class="bi-linkedin" style="font-size: 2rem; color:currentColor;"></a>
+                  <!-- GitHub -->
+                  <a href="https://www.github.com/" target="_blank" 
+                  i class="bi-github" style="font-size: 2rem; color:currentColor;"></a>
+                  <a href="#" target="_blank" 
+                i class="bi-search" style="font-size: 2rem; color:currentColor;"></a>
+                </div> 
+              </div>
+            </div>
+            <hr class="my-2">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                  <a class="btn" href="index.html" role="button"><img src="./assets/images/logo-dark.png" alt="" height="50" /></a>
+                  <p>2023 © Purr &amp; Paw Photography. Design by Bhairavi</p>
+                </div>
+            </div>
+        </div>
+</footer>
+
+<!--Script to make navbar visible if scrolling on home page; Need the jQuery CDN link in the <head> to make the script work-->
+<script>
+    var nav =document.querySelector('nav');
+    window.addEventListener ('scroll',function(){
+      if (window.pageYOffset >100)
+      {nav.classList.add ('bg-primary', 'shadow');}
+      else
+      {nav.classList.remove('bg-primary');}
+      })
+</script>
+
+</body>
+</html>
