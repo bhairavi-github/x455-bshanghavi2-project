@@ -13,14 +13,12 @@ File Description: Main CSS file of Purr & Wag Pet Photography Website
   --bs-warning-rgb: 238, 238, 238 !important;       /* #EEEEEE */
   --bs-body-bg-rgb: 238, 238, 238 !important;       /* #EEEEEE */
    
-
   --bs-bg-primary: #ceb4c1 !important;
   --bs-bg-success:  #79857A !important;
   --bs-bg-info: #B6D0B9 !important;
   --bs-bg-warning: #EEEEEE !important;
   --bs-body-bg: #EEEEEE !important;
 }
-
 
 .bg-primary {
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
@@ -40,22 +38,21 @@ File Description: Main CSS file of Purr & Wag Pet Photography Website
 
 /* Change Bootstrap's Button Color for bg-success */
 .btn-success {
-  --bs-btn-color: #fff;
+  --bs-btn-color: #000;
   --bs-btn-bg: #79857A;
   --bs-btn-border-color: #79857A;
-  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-color: #000;
   --bs-btn-hover-bg: #879688;
   --bs-btn-hover-border-color: #6d7a6e;
   --bs-btn-focus-shadow-rgb: 60, 153, 110;
-  --bs-btn-active-color: #fff;
+  --bs-btn-active-color: #000;
   --bs-btn-active-bg: #6d7a6e;
   --bs-btn-active-border-color: #7f8d81;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-color: #000;
   --bs-btn-disabled-bg: #79857A;
   --bs-btn-disabled-border-color: #79857A;
 }
-
 
 .btn-info {
   --bs-btn-color: #000;
@@ -88,77 +85,80 @@ File Description: Main CSS file of Purr & Wag Pet Photography Website
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
 }
+/*Define new font-families*/
 
-/*Import Cormorant Garmond Light 300 Regular & Italic, Lato 400 Regular & Italic, Lato 700 Bold & Italic Google Fonts
-CDN links are in HTML files
-font-family: 'Cormorant Garamond', serif;
-font-family: 'Lato', sans-serif;
-*/
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face {
+  font-family: 'newCormorantGaramond-Regular';
+  src: url("../fonts/CormorantGaramond-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'newCormorantGaramond-Italic';
+  src: url("../fonts/CormorantGaramond-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'newCormorantGaramond-SemiBold';
+  src: url("../fonts/CormorantGaramond-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'newCormorantGaramond-Light';
+  src: url("../fonts/CormorantGaramond-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'newLato-Regular';
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+
 
 /*Change Bootstrap 5's default body font family and font-size*/
 :root {
-  --bs-font-sans-serif: 'Lato', sans-serif !important;
+  --bs-font-sans-serif: 'newLato-Regular' !important;
   --bs-body-font-size: 1rem !important;
 }
 
 body {
-	font-family: 'Lato', sans-serif;
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Cormorant Garamond', serif;
+	font-family: 'newLato-Regular';
 }
 
 
 /*Font Stylings*/
 .title-text {
-  font-family: 'Cormorant Garamond', serif !important;
+  font-family:  'newCormorantGaramond-Light' !important;
   text-transform: uppercase !important;
+  font-weight: bold;
 }
 
 .subtitle-text {
-  font-family: 'Cormorant Garamond', serif !important;
-  font-style: italic !important;
+  font-family: 'newCormorantGaramond-Italic' !important;
 }
 
 .nav-text {
-  font-family: 'lato', sans-serif !important;
+  font-family: 'newLato-Regular', sans-serif !important;
   text-transform: uppercase !important;
 }
 
 .header-image-title {
-  font-family: 'Cormorant Garamond', serif !important;
-  font-weight: bolder !important;
+  font-family: 'newCormorantGaramond-SemiBold'; /* pam updated */
   text-transform: uppercase !important;
 }
 
 .header-image-subtitle {
-  font-family: 'lato', sans-serif !important;
+  font-family: 'newLato-Regular' !important;
 }
 
 .footer-title-text {
-  font-family: 'Cormorant Garamond', serif !important;
+  font-family: 'newCormorantGaramond-SemiBold' !important;
+  
 }
 
 .carousel-image-title {
-  font-family: 'Cormorant Garamond', serif !important;
-  font-weight: bolder;
+  font-family: 'newCormorantGaramond-SemiBold' !important;
 }
 
 .carousel-image-subtitle {
-  font-family: 'lato', sans-serif !important;
+  font-family: 'newLato-Regular' !important;
 }
 
 
